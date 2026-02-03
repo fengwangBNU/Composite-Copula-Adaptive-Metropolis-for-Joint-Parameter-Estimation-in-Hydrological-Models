@@ -1,0 +1,2 @@
+# Composite-Copula-Adaptive-Metropolis-for-Joint-Parameter-Estimation-in-Hydrological-Models
+This repository contains R code for sampling and analyzing posterior distributions of HYMOD model parameters using advanced MCMC algorithms based on copula structures. The implementation demonstrates how CopMH and HCopAM can be applied in practice and can be readily adapted for use in other hydrological models or related studies.
