@@ -1,0 +1,61 @@
+#######Overview#######
+
+This repository contains R code for sampling and analyzing posterior distributions of HYMOD model parameters using advanced MCMC algorithms based on copula structures. The implementation demonstrates how CopMH and HCopAM can be applied in practice and can be readily adapted for use in other hydrological models or related studies. Additionally, readers can examine the computational performance of HCopAM in relation to model parameter dimensions and the number of candidate copula families.
+
+
+
+#######Contents#######
+
+The repository includes the following R scripts:
+
+CopMH+HCopAM_case_study_of_HYMOD_model_parameters.R
+
+Implements posterior sampling and comparative analysis of HYMOD model parameters for the Yuanjiaan catchment using AM, CopMH, and HCopAM algorithms.
+
+Illustrates practical use of CopMH and HCopAM and can be adapted for other hydrological modeling applications.
+
+Performance_of_Vine_Copula_Fit_and_Sampling_Time_vs_Dimension.R
+
+Evaluates the performance of vine copula fitting and MCMC sampling time with respect to the number of model parameters (dimension).
+
+Provides guidance on computational efficiency and scalability of copula-based algorithms.
+
+Computational_time_of_Vine_Copula_models_with_different_numbers_of_copula_families.R
+
+Assesses the impact of the number of candidate copula families on computational time.
+
+Helps users understand the trade-offs between flexibility in copula choice and computational cost.
+
+
+#######Data#######
+
+The data required to run the scripts are included in this repository.
+
+Each script is fully self-contained, and all paths are relative, so users can run the analyses without additional modifications.
+
+
+#######Usage#######
+
+Load the relevant dataset provided with the scripts.
+
+Open the desired R script in RStudio or any R environment.
+
+Run the script line by line to reproduce the analyses.
+
+
+#######Output includes:#######
+
+Posterior distributions of HYMOD model parameters
+
+Comparisons between AM, CopMH, and HCopAM
+
+Computational performance metrics related to HCopAM and copula configurations
+
+
+#######Notes#######
+
+AM, CopMH, and HCopAM: The scripts provide a practical implementation of these MCMC algorithms for hydrological models.
+
+Computational performance: Users can explore how HCopAM runtime scales with the number of model parameters and the number of copula families.
+
+Adaptability: The code structure allows users to replace HYMOD with other hydrological models or adjust copula configurations according to their research needs.
